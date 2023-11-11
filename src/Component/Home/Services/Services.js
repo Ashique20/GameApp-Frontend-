@@ -55,7 +55,6 @@ const Services =()=>{
         <div className="card-body ">
           <h2 className="card-title">
             {service.name}
-            <div className="badge badge-secondary sm:none">NEW</div>
           </h2>
           
           

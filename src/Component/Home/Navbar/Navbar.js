@@ -26,9 +26,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex-1">
-        <Link to='/' className="btn  normal-case text-xl mx-[45%] hover:text-rose-800 ">
-          <a >BigGame</a>
-        </Link>
+            
+           <h1 className="normal-case text-xl mx-[45%] hover:text-rose-800"> BigGame</h1>
+        
       </div>
 
     </div>

@@ -8,12 +8,13 @@ const Follow = () => {
         Aos.init({duration:2000})
       },[])
     return (
-        <div className="bg-slate-800 min-h-screen lg:flex flex-nowrap 
+        <div className="bg-slate-800 min-h-screen   
         ">
-            <div className="lg:mt-60">
+           <div className="lg:flex">
+           <div className="lg:mt-60">
                 <h1 className="lg:ml-[110%] text-9xl">Follow</h1>
             </div>
-            <div className="mt-60 ml-[35%]">
+            <div className="mt-60 lg:ml-[35%]">
                 <ul data-aos='zoom-in-left'>
                     {/* li of phone number */}
                 <li className="flex">
@@ -26,8 +27,8 @@ const Follow = () => {
                 <li className="flex mt-5 "> <div >
                     <img className="w-10 " src="https://static-00.iconduck.com/assets.00/mail-icon-1024x1024-lf56uwrj.png" alt="Album" />
                 </div>
-                    <div className="ml-5 mt-2 font-bold">
-                        <p>ashiqurrahman2092003@gmail.com</p></div></li>
+                    <div className="lg:ml-5 lg:mt-2 font-bold">
+                        <p className="text-center">ashiqurrahman2092003@gmail.com</p></div></li>
                          {/* li of phone social media icons */}
                 <li className="flex mt-5 ">
                 <div >
@@ -43,11 +44,13 @@ const Follow = () => {
                 </li>
             </ul>
                      {/* div for follow description */}
-            <div data-aos='fade-up' className="lg:ml-[-70%] lg:w-[120%] mt-20 lg:mb-20 sm: mr-20" >
+           
+            </div>
+           </div>
+           <div data-aos='fade-up' className="text-center lg:mx-20 lg:my-10 " >
                 <h1 >
                 Web Site means any point of presence maintained on the Internet or on any other public data network. With respect to any Website maintained on the World Wide Web, such Website includes all HTML pages (or similar unit of information presented in any relevant data protocol) that either (a) are identified by the same second-level domain (such as xxxxxxxxx.xxx) or by the same equivalent level identifier in any relevant address scheme, or (b) contain branding, graphics, navigation or other characteristics such that a user reasonably would conclude that the pages are part of an integrated information or service offering. Internet Website means a collection of related web pages, images, videos or other digital assets that are addressed relative to a common Uniform Resource Identifier (URI) and is accessible to the public; (“site Web Internet”) Web means the World Wide Web. Company’s Website means the website of the Company and/or its web-address or domain name (if any). NYFRB’s Website means the website of the NYFRB at xxxx://xxx.xxxxxxxxxx.xxx, or any successor source. CREFC® Website The CREFC®’s Website located at “xxx.xxxxx.xxx” or such other primary website as the CREFC® may establish for dissemination of its report forms. World Wide Web means an information browsing framework that allows a user to locate and access information stored on a remote computer and to follow references from one computer to related information on another computer
                 </h1>
-            </div>
             </div>
         </div>
     )

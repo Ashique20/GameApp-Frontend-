@@ -1,6 +1,26 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Form =()=>{
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(e.target);
+    const email = formData.get('email');
+    const name = formData.get('name');
+    const message = formData.get('message');
+
+    // Add logic to show toast
+    showToast(email, name, message);
+  };
+
+  const showToast = (email, name, message) => {
+    toast.success(`Message Sent`, {
+     
+    });
+  };
+
     return(
        
         
@@ -10,7 +30,7 @@ const Form =()=>{
            <div className="card-body   w-96">
            
              <div className="flex flex-col w-full border-opacity-50 ">
-           <form className="text-black">
+           <form onSubmit={handleSubmit} className="text-black">
   
   
   
